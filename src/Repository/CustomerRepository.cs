@@ -1,6 +1,9 @@
+using SimpleApi.Models;
+using SimpleApi.Repository.Interfaces;
+
 namespace SimpleAPI.Repository
 {
-    public class CustomerRepository
+    public class CustomerRepository : ICustomerRepository
     {
         private readonly Dictionary<Guid, Customer> _customers = new();
 
